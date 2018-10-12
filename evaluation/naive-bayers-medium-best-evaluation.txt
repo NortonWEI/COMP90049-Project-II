@@ -1,0 +1,717 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     twitter-troll-best50
+Instances:    122637
+Attributes:   112
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute             LeftTroll  RightTroll       Other
+                         (0.29)      (0.32)       (0.4)
+========================================================
+tweet-id
+  mean               320263.2708 320728.2882  319330.949
+  std. dev.          379378.8234 379736.0471 378346.9344
+  weight sum               34971       38998       48668
+  precision               9.1541      9.1541      9.1541
+
+user-id
+  mean                   90.9108     46.4693     79.5926
+  std. dev.              41.7812      25.106     56.6811
+  weight sum               34971       38998       48668
+  precision               1.7475      1.7475      1.7475
+
+a
+  mean                    0.2319      0.1686      0.0725
+  std. dev.               0.5157      0.4329      0.2962
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+about
+  mean                     0.043      0.0326      0.0107
+  std. dev.               0.2122      0.1846      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+all
+  mean                    0.0433      0.0272      0.0102
+  std. dev.                0.211      0.1677      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+america
+  mean                    0.0138      0.0294      0.0034
+  std. dev.               0.2778      0.2778      0.2778
+  weight sum               34971       38998       48668
+  precision               1.6667      1.6667      1.6667
+
+amp
+  mean                    0.0373      0.0108      0.0022
+  std. dev.               0.2094      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+and
+  mean                     0.179      0.1077      0.0448
+  std. dev.               0.4303      0.3325      0.2207
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+anthem
+  mean                    0.0009      0.0089      0.0003
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+antifa
+  mean                    0.0001      0.0065           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+are
+  mean                    0.0652      0.0472      0.0139
+  std. dev.               0.2683      0.2276      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+bbsp
+  mean                    0.0002      0.0197           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+be
+  mean                    0.0645      0.0401      0.0185
+  std. dev.               0.2626      0.2039      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+beeth
+  mean                         0      0.0204           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+black
+  mean                    0.0502      0.0125      0.0047
+  std. dev.               0.2495      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+blacklivesmatter
+  mean                    0.0002      0.0001           0
+  std. dev.               0.3333      0.3333      0.3333
+  weight sum               34971       38998       48668
+  precision                    2           2           2
+
+breaking
+  mean                    0.0041      0.0529      0.0017
+  std. dev.               0.1667      0.2245      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+bris
+  mean                         0      0.0072           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+but
+  mean                    0.0414      0.0222      0.0085
+  std. dev.               0.2024      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+by
+  mean                    0.0625      0.0373      0.0161
+  std. dev.               0.2557      0.1944      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+ccot
+  mean                    0.0001      0.0074           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+claims
+  mean                    0.0014      0.0081      0.0007
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+clinton
+  mean                    0.0075      0.0163      0.0033
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+conservative
+  mean                    0.0012      0.0101      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+dallas
+  mean                    0.0005      0.0017      0.0228
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+dems
+  mean                    0.0013      0.0074      0.0002
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+der
+  mean                    0.0001           0      0.0191
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+die
+  mean                    0.0028      0.0018      0.0247
+  std. dev.               0.1667      0.1667      0.1791
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+dont
+  mean                    0.0355      0.0186      0.0086
+  std. dev.               0.1973      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+feelthebern
+  mean                    0.0004      0.0053      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+for
+  mean                    0.1845      0.1647      0.0828
+  std. dev.               0.4795      0.4454      0.3198
+  weight sum               34971       38998       48668
+  precision                 1.25        1.25        1.25
+
+fort
+  mean                    0.0002      0.0003       0.017
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+ft
+  mean                    0.0112      0.0005      0.0004
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+get
+  mean                    0.0543      0.0226      0.0127
+  std. dev.               0.2808        0.25        0.25
+  weight sum               34971       38998       48668
+  precision                  1.5         1.5         1.5
+
+gt
+  mean                    0.0123      0.0004      0.0004
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+harvey
+  mean                    0.0003      0.0066      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+has
+  mean                    0.0268      0.0289      0.0063
+  std. dev.               0.1683      0.1706      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+have
+  mean                    0.0498      0.0331      0.0137
+  std. dev.               0.2309      0.1862      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+he
+  mean                    0.0354      0.0296      0.0072
+  std. dev.               0.2118      0.1908      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+here
+  mean                    0.0224      0.0089      0.0022
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+hillary
+  mean                    0.0056       0.031      0.0022
+  std. dev.               0.1667      0.1778      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+hillarys
+  mean                    0.0003      0.0054      0.0002
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+hiphop
+  mean                    0.0072      0.0001      0.0002
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+his
+  mean                    0.0344      0.0301      0.0083
+  std. dev.               0.1962       0.179      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+how
+  mean                    0.0365      0.0222      0.0082
+  std. dev.               0.1959      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+httpstcoatnbcoipt
+  mean                         0           0      0.0088
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+httpstcoemxjgtvv
+  mean                    0.0096           0           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+i
+  mean                    0.1595      0.0548      0.0621
+  std. dev.               0.4961      0.2865      0.2973
+  weight sum               34971       38998       48668
+  precision               1.1667      1.1667      1.1667
+
+ich
+  mean                    0.0001           0      0.0097
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+if
+  mean                    0.0375      0.0245      0.0061
+  std. dev.               0.1965      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+im
+  mean                     0.034       0.009      0.0151
+  std. dev.               0.1957      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+instotus
+  mean                         0      0.0092           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+iran
+  mean                    0.0008      0.0075      0.0004
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+is
+  mean                    0.1608      0.1236       0.031
+  std. dev.               0.4153      0.3546      0.1796
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+isis
+  mean                    0.0016      0.0139      0.0037
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+islamkills
+  mean                         0      0.0074           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+ist
+  mean                         0           0      0.0138
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+it
+  mean                    0.0924      0.0574      0.0226
+  std. dev.               0.3539       0.274         0.2
+  weight sum               34971       38998       48668
+  precision                  1.2         1.2         1.2
+
+just
+  mean                    0.0375      0.0404      0.0085
+  std. dev.                0.194      0.1984      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+korea
+  mean                    0.0008      0.0067      0.0005
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+liberal
+  mean                    0.0011      0.0097      0.0002
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+liberals
+  mean                    0.0014      0.0145      0.0003
+  std. dev.                 0.25        0.25        0.25
+  weight sum               34971       38998       48668
+  precision                  1.5         1.5         1.5
+
+like
+  mean                    0.0382      0.0178      0.0097
+  std. dev.               0.2026      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+listen
+  mean                    0.0099      0.0013      0.0005
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+look
+  mean                    0.0078       0.016      0.0032
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+maga
+  mean                    0.0008        0.04      0.0001
+  std. dev.               0.1667      0.1962      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+me
+  mean                    0.0471      0.0129      0.0144
+  std. dev.               0.2368      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+media
+  mean                    0.0085      0.0148      0.0015
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+merkel
+  mean                    0.0002      0.0014      0.0154
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+mt
+  mean                    0.0003      0.0074      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+music
+  mean                    0.0183      0.0026      0.0022
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+my
+  mean                    0.0623      0.0184      0.0276
+  std. dev.               0.2749      0.1667      0.1747
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+news
+  mean                    0.0086      0.0644      0.0432
+  std. dev.               0.1667      0.2481      0.2044
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+nfl
+  mean                    0.0013      0.0156      0.0008
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+not
+  mean                    0.0657      0.0487       0.016
+  std. dev.               0.2919      0.2437      0.1944
+  weight sum               34971       38998       48668
+  precision               1.1667      1.1667      1.1667
+
+now
+  mean                    0.0442      0.0191       0.005
+  std. dev.               0.2076      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+nowplaying
+  mean                    0.0168      0.0002           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+obama
+  mean                    0.0095      0.0382       0.004
+  std. dev.               0.1667      0.1957      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+obamas
+  mean                    0.0022      0.0093      0.0005
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+of
+  mean                    0.1999      0.1666      0.0759
+  std. dev.               0.4593      0.4103      0.2821
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+on
+  mean                    0.1309      0.0993      0.0481
+  std. dev.               0.3577      0.3118      0.2201
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+or
+  mean                    0.0331      0.0158      0.0056
+  std. dev.               0.2132      0.2083      0.2083
+  weight sum               34971       38998       48668
+  precision                 1.25        1.25        1.25
+
+our
+  mean                    0.0268      0.0231      0.0044
+  std. dev.               0.1756      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+out
+  mean                    0.0404      0.0295      0.0107
+  std. dev.               0.2014      0.1719      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+patriot
+  mean                    0.0003      0.0067      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+patriots
+  mean                    0.0005      0.0105      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+people
+  mean                    0.0515      0.0282      0.0116
+  std. dev.               0.2644      0.2083      0.2083
+  weight sum               34971       38998       48668
+  precision                 1.25        1.25        1.25
+
+pjnet
+  mean                    0.0006      0.0177           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+playing
+  mean                    0.0001           0           0
+  std. dev.               0.3333      0.3333      0.3333
+  weight sum               34971       38998       48668
+  precision                    2           2           2
+
+police
+  mean                    0.0191      0.0165      0.0431
+  std. dev.               0.1667      0.1667      0.2048
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+politics
+  mean                    0.0027      0.0185      0.0009
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+retweet
+  mean                    0.0023      0.0334      0.0002
+  std. dev.               0.1667      0.1796      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+richmond
+  mean                    0.0002      0.0001      0.0113
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+rt
+  mean                    0.0296      0.0498      0.0018
+  std. dev.               0.1731      0.2212      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+rtamerica
+  mean                         0      0.0325           0
+  std. dev.               0.1667      0.1774      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+so
+  mean                    0.0411      0.0193      0.0107
+  std. dev.               0.2077      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+sports
+  mean                     0.002      0.0171      0.0011
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+talibkweli
+  mean                    0.0074           0           0
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+tcot
+  mean                    0.0018      0.0249      0.0001
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+that
+  mean                    0.1009      0.0588      0.0209
+  std. dev.               0.3659      0.2766      0.2083
+  weight sum               34971       38998       48668
+  precision                 1.25        1.25        1.25
+
+the
+  mean                    0.4201      0.2954      0.0924
+  std. dev.               0.6939      0.5875      0.3345
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+they
+  mean                    0.0463      0.0324      0.0098
+  std. dev.               0.2576      0.2116         0.2
+  weight sum               34971       38998       48668
+  precision                  1.2         1.2         1.2
+
+this
+  mean                    0.1203       0.072      0.0167
+  std. dev.               0.3883      0.2945         0.2
+  weight sum               34971       38998       48668
+  precision                  1.2         1.2         1.2
+
+to
+  mean                    0.3243      0.3226      0.1229
+  std. dev.                0.594      0.5453      0.3605
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+trump
+  mean                    0.0527      0.0901      0.0178
+  std. dev.               0.2348      0.2974      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+und
+  mean                    0.0001           0      0.0148
+  std. dev.               0.1667      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+us
+  mean                    0.0309      0.0382      0.0083
+  std. dev.               0.1844      0.1969      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+video
+  mean                    0.0182      0.0369      0.0057
+  std. dev.               0.1667      0.1902      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+we
+  mean                    0.0556      0.0367      0.0068
+  std. dev.               0.2662      0.2111      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+when
+  mean                    0.0328      0.0201      0.0069
+  std. dev.               0.1831      0.1667      0.1667
+  weight sum               34971       38998       48668
+  precision                    1           1           1
+
+white
+  mean                    0.0381      0.0193      0.0051
+  std. dev.               0.2283      0.2083      0.2083
+  weight sum               34971       38998       48668
+  precision                 1.25        1.25        1.25
+
+
+
+Time taken to build model: 1.44 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 5.41 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       33782               60.1167 %
+Incorrectly Classified Instances     22412               39.8833 %
+Kappa statistic                          0.3958
+Mean absolute error                      0.2852
+Root mean squared error                  0.4686
+Relative absolute error                 64.441  %
+Root relative squared error             99.3252 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.491    0.192    0.534      0.491    0.512      0.306    0.710     0.502     LeftTroll
+                 0.306    0.095    0.615      0.306    0.408      0.267    0.554     0.502     RightTroll
+                 0.971    0.315    0.632      0.971    0.765      0.632    0.887     0.690     Other
+Weighted Avg.    0.601    0.204    0.596      0.601    0.568      0.410    0.721     0.570     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  8541  3179  5659 |     a = LeftTroll
+  7271  5718  5717 |     b = RightTroll
+   192   394 19523 |     c = Other
+

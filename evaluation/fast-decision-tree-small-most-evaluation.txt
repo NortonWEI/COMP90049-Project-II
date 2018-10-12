@@ -1,0 +1,172 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     twitter-troll-most10
+Instances:    122637
+Attributes:   13
+              tweet-id
+              user-id
+              a
+              and
+              for
+              in
+              is
+              of
+              on
+              the
+              to
+              you
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+user-id < 49.5
+|   user-id < 28.5
+|   |   user-id < 9.5
+|   |   |   user-id < 7.5
+|   |   |   |   user-id < 3.5 : LeftTroll (184/0) [95/0]
+|   |   |   |   user-id >= 3.5 : Other (692/0) [332/0]
+|   |   |   user-id >= 7.5 : RightTroll (2314/0) [1188/0]
+|   |   user-id >= 9.5
+|   |   |   user-id < 16.5 : Other (6617/0) [3277/0]
+|   |   |   user-id >= 16.5
+|   |   |   |   user-id < 25
+|   |   |   |   |   user-id < 17.5 : LeftTroll (45/0) [34/0]
+|   |   |   |   |   user-id >= 17.5 : RightTroll (3424/3) [1718/0]
+|   |   |   |   user-id >= 25 : Other (2168/0) [1040/0]
+|   user-id >= 28.5
+|   |   user-id < 46.5
+|   |   |   user-id < 42.5
+|   |   |   |   user-id < 35
+|   |   |   |   |   user-id < 31 : LeftTroll (1757/0) [903/0]
+|   |   |   |   |   user-id >= 31 : Other (375/0) [212/0]
+|   |   |   |   user-id >= 35 : RightTroll (3589/0) [1765/0]
+|   |   |   user-id >= 42.5
+|   |   |   |   user-id < 45 : LeftTroll (3629/0) [1814/0]
+|   |   |   |   user-id >= 45 : Other (7/0) [4/0]
+|   |   user-id >= 46.5 : RightTroll (12836/0) [6417/0]
+user-id >= 49.5
+|   user-id < 73.5
+|   |   user-id < 52 : LeftTroll (588/0) [256/0]
+|   |   user-id >= 52
+|   |   |   user-id < 55.5 : Other (6695/0) [3410/0]
+|   |   |   user-id >= 55.5
+|   |   |   |   user-id < 57 : RightTroll (19/0) [15/0]
+|   |   |   |   user-id >= 57
+|   |   |   |   |   user-id < 62.5
+|   |   |   |   |   |   user-id < 59.5 : Other (112/0) [52/0]
+|   |   |   |   |   |   user-id >= 59.5 : RightTroll (11/0) [6/0]
+|   |   |   |   |   user-id >= 62.5 : Other (2352/3) [1156/0]
+|   user-id >= 73.5
+|   |   user-id < 99.5
+|   |   |   user-id < 86
+|   |   |   |   user-id < 75 : LeftTroll (3538/0) [1794/0]
+|   |   |   |   user-id >= 75
+|   |   |   |   |   user-id < 83
+|   |   |   |   |   |   user-id < 80.5
+|   |   |   |   |   |   |   user-id < 78 : RightTroll (31/0) [19/0]
+|   |   |   |   |   |   |   user-id >= 78 : Other (29/0) [15/0]
+|   |   |   |   |   |   user-id >= 80.5 : RightTroll (456/0) [239/0]
+|   |   |   |   |   user-id >= 83 : LeftTroll (2805/0) [1366/0]
+|   |   |   user-id >= 86
+|   |   |   |   user-id < 92
+|   |   |   |   |   user-id < 88.5 : RightTroll (1792/0) [871/0]
+|   |   |   |   |   user-id >= 88.5
+|   |   |   |   |   |   user-id < 90.5
+|   |   |   |   |   |   |   user-id < 89.5 : LeftTroll (2/0) [1/0]
+|   |   |   |   |   |   |   user-id >= 89.5 : Other (374/0) [176/0]
+|   |   |   |   |   |   user-id >= 90.5 : RightTroll (122/0) [72/0]
+|   |   |   |   user-id >= 92
+|   |   |   |   |   user-id < 95.5 : LeftTroll (2982/0) [1501/0]
+|   |   |   |   |   user-id >= 95.5
+|   |   |   |   |   |   user-id < 97.5 : Other (42/0) [21/0]
+|   |   |   |   |   |   user-id >= 97.5 : RightTroll (328/0) [156/0]
+|   |   user-id >= 99.5
+|   |   |   user-id < 122
+|   |   |   |   user-id < 120.5
+|   |   |   |   |   to < 0.5
+|   |   |   |   |   |   user-id < 108.5
+|   |   |   |   |   |   |   user-id < 102
+|   |   |   |   |   |   |   |   user-id < 100.5 : Other (29/0) [7/0]
+|   |   |   |   |   |   |   |   user-id >= 100.5 : LeftTroll (11/0) [3/0]
+|   |   |   |   |   |   |   user-id >= 102 : Other (1529/0) [809/0]
+|   |   |   |   |   |   user-id >= 108.5
+|   |   |   |   |   |   |   user-id < 117
+|   |   |   |   |   |   |   |   user-id < 113 : RightTroll (69/30) [32/4]
+|   |   |   |   |   |   |   |   user-id >= 113
+|   |   |   |   |   |   |   |   |   user-id < 115 : LeftTroll (3/0) [2/0]
+|   |   |   |   |   |   |   |   |   user-id >= 115 : RightTroll (13/0) [8/0]
+|   |   |   |   |   |   |   user-id >= 117 : Other (1265/0) [603/0]
+|   |   |   |   |   to >= 0.5
+|   |   |   |   |   |   user-id < 117
+|   |   |   |   |   |   |   user-id < 107
+|   |   |   |   |   |   |   |   user-id < 103 : LeftTroll (2/0) [3/0]
+|   |   |   |   |   |   |   |   user-id >= 103 : Other (5/0) [2/0]
+|   |   |   |   |   |   |   user-id >= 107 : RightTroll (37/9) [9/1]
+|   |   |   |   |   |   user-id >= 117 : Other (26/0) [9/0]
+|   |   |   |   user-id >= 120.5 : RightTroll (926/1) [454/0]
+|   |   |   user-id >= 122
+|   |   |   |   user-id < 125 : LeftTroll (3688/0) [1870/0]
+|   |   |   |   user-id >= 125
+|   |   |   |   |   user-id < 151.5
+|   |   |   |   |   |   user-id < 140
+|   |   |   |   |   |   |   user-id < 136.5
+|   |   |   |   |   |   |   |   user-id < 134.5
+|   |   |   |   |   |   |   |   |   user-id < 132.5 : Other (395/0) [208/0]
+|   |   |   |   |   |   |   |   |   user-id >= 132.5 : RightTroll (4/0) [2/0]
+|   |   |   |   |   |   |   |   user-id >= 134.5 : Other (413/0) [235/0]
+|   |   |   |   |   |   |   user-id >= 136.5
+|   |   |   |   |   |   |   |   user-id < 138 : RightTroll (34/0) [15/0]
+|   |   |   |   |   |   |   |   user-id >= 138 : Other (6/2) [7/1]
+|   |   |   |   |   |   user-id >= 140 : Other (5499/0) [2816/0]
+|   |   |   |   |   user-id >= 151.5
+|   |   |   |   |   |   user-id < 161
+|   |   |   |   |   |   |   user-id < 159
+|   |   |   |   |   |   |   |   user-id < 152.5 : LeftTroll (1225/0) [601/0]
+|   |   |   |   |   |   |   |   user-id >= 152.5
+|   |   |   |   |   |   |   |   |   user-id < 155
+|   |   |   |   |   |   |   |   |   |   user-id < 153.5 : Other (25/0) [6/0]
+|   |   |   |   |   |   |   |   |   |   user-id >= 153.5 : RightTroll (32/0) [17/0]
+|   |   |   |   |   |   |   |   |   user-id >= 155 : Other (1190/0) [569/0]
+|   |   |   |   |   |   |   user-id >= 159 : LeftTroll (2852/0) [1414/0]
+|   |   |   |   |   |   user-id >= 161 : Other (2565/0) [1253/0]
+
+Size of the tree : 111
+
+Time taken to build model: 1.53 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       14359               25.5526 %
+Incorrectly Classified Instances     41835               74.4474 %
+Kappa statistic                         -0.1401
+Mean absolute error                      0.4689
+Root mean squared error                  0.6694
+Relative absolute error                105.9428 %
+Root relative squared error            141.8744 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.010    0.024    0.165      0.010    0.020      -0.044   0.493     0.308     LeftTroll
+                 0.447    0.369    0.377      0.447    0.409      0.075    0.676     0.445     RightTroll
+                 0.289    0.750    0.177      0.289    0.219      -0.449   0.283     0.315     Other
+Weighted Avg.    0.256    0.399    0.240      0.256    0.221      -0.149   0.479     0.356     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+   181   111 17087 |     a = LeftTroll
+   355  8364  9987 |     b = RightTroll
+   563 13732  5814 |     c = Other
+

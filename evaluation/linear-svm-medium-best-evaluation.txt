@@ -1,0 +1,394 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LibLINEAR -S 1 -C 1.0 -E 0.001 -B 1.0 -L 0.1 -I 1000
+Relation:     twitter-troll-best50
+Instances:    122637
+Attributes:   112
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LibLINEAR wrapper
+
+Model bias=1.0 nr_class=3 nr_feature=112 solverType=L2R_L2LOSS_SVC_DUAL
+
+Model for class LeftTroll
+
+         0    * tweet-id
+-        0.01 * user-id
+-        0.09 * a
++        0.08 * about
+-        0.49 * all
++        0    * america
+-        0.04 * amp
++        0.15 * and
+-        0    * anthem
++        0    * antifa
+-        0.02 * are
++        0    * bbsp
+-        0.08 * be
++        0.09 * beeth
+-        0    * black
+-        0    * blacklivesmatter
++        0.1  * breaking
++        0.05 * bris
++        0.01 * but
++        0.11 * by
++        0    * ccot
++        0    * claims
++        0    * clinton
++        0    * conservative
+-        0.15 * dallas
++        0    * dems
+-        0    * der
+-        0.01 * die
+-        0.04 * dont
++        0    * feelthebern
++        0.04 * for
+-        0    * fort
++        0    * ft
+-        0.04 * get
+-        0    * gt
++        0    * harvey
++        0.02 * has
+-        0.03 * have
++        0    * he
+-        0    * here
++        0.03 * hillary
++        0    * hillarys
+-        0    * hiphop
+-        0    * his
+-        0.01 * how
+-        0    * httpstcoatnbcoipt
+-        0    * httpstcoemxjgtvv
+-        0.22 * i
+-        0    * ich
+-        0    * if
+-        0.03 * im
++        0    * instotus
++        0    * iran
++        0.04 * is
++        0    * isis
++        0    * islamkills
+-        0    * ist
+-        0.01 * it
++        0.1  * just
++        0.02 * korea
++        0    * liberal
+-        0    * liberals
+-        0.03 * like
+-        0.01 * listen
++        0.08 * look
++        0.2  * maga
+-        0.07 * me
++        0.13 * media
+-        0.03 * merkel
++        0    * mt
+-        0.04 * music
+-        0.02 * my
+-        0.04 * news
++        0    * nfl
++        0.02 * not
++        0.09 * now
+-        0.02 * nowplaying
++        0.01 * obama
+-        0    * obamas
++        0.68 * of
+-        0.08 * on
+-        0    * or
++        0.03 * our
++        0.02 * out
++        0    * patriot
++        0    * patriots
+-        0.06 * people
++        0    * pjnet
++        0    * playing
+-        0.09 * police
++        0.06 * politics
++        0.19 * retweet
+-        0    * richmond
++        0.19 * rt
++        0.19 * rtamerica
++        0.2  * so
++        0.18 * sports
+-        0    * talibkweli
++        0.06 * tcot
+-        0.02 * that
+-        0.15 * the
+-        0.05 * they
+-        0.04 * this
++        0.23 * to
++        0.06 * trump
+-        0    * und
++        0.02 * us
+-        0    * video
++        0.11 * we
+-        0.02 * when
+-        0    * white
++        0.03 * 1.0
+
+Model for class RightTroll
+
+         0    * tweet-id
+-        0.01 * user-id
+-        0.1  * a
+-        0.09 * about
++        0.6  * all
+-        0    * america
+-        0.01 * amp
+-        0.19 * and
+-        0    * anthem
+-        0    * antifa
+-        0.07 * are
+-        0    * bbsp
++        0.01 * be
+-        0.08 * beeth
+-        0.01 * black
+-        0    * blacklivesmatter
+-        0.11 * breaking
+-        0.03 * bris
+-        0.04 * but
+-        0.06 * by
+-        0    * ccot
+-        0    * claims
+-        0    * clinton
+-        0    * conservative
++        0.24 * dallas
+-        0    * dems
++        0    * der
++        0.07 * die
+-        0.04 * dont
+-        0    * feelthebern
+-        0.25 * for
++        0    * fort
+-        0    * ft
+-        0.09 * get
+-        0    * gt
+-        0    * harvey
+-        0.02 * has
+-        0.02 * have
+-        0    * he
+-        0    * here
+-        0.02 * hillary
+-        0    * hillarys
+-        0    * hiphop
+-        0.04 * his
+-        0    * how
++        0    * httpstcoatnbcoipt
+-        0    * httpstcoemxjgtvv
++        0.13 * i
++        0    * ich
+-        0    * if
++        0.02 * im
+-        0    * instotus
+-        0    * iran
+-        0.27 * is
+-        0    * isis
+-        0    * islamkills
++        0.04 * ist
+-        0.03 * it
+-        0.03 * just
+-        0.02 * korea
+-        0    * liberal
+-        0    * liberals
++        0.02 * like
++        0.02 * listen
+-        0.09 * look
+-        0.17 * maga
++        0.03 * me
+-        0.08 * media
++        0.07 * merkel
+-        0    * mt
++        0.05 * music
+-        0.08 * my
++        0.05 * news
+-        0    * nfl
+-        0.1  * not
+-        0.1  * now
+-        0.03 * nowplaying
+-        0    * obama
+-        0    * obamas
+-        0.57 * of
++        0.04 * on
+-        0.03 * or
+-        0.07 * our
+-        0.12 * out
+-        0    * patriot
+-        0    * patriots
+-        0.01 * people
+-        0    * pjnet
+-        0    * playing
+-        0.02 * police
+-        0.04 * politics
+-        0.17 * retweet
++        0    * richmond
+-        0.17 * rt
+-        0.17 * rtamerica
+-        0.13 * so
+-        0.14 * sports
+-        0    * talibkweli
+-        0.09 * tcot
+-        0.06 * that
++        0.01 * the
++        0.01 * they
+-        0.05 * this
+-        0.25 * to
+-        0.12 * trump
++        0    * und
+-        0.05 * us
+-        0.03 * video
+-        0.09 * we
+-        0.02 * when
+-        0.01 * white
+-        0.01 * 1.0
+
+Model for class Other
+
+         0    * tweet-id
++        0.01 * user-id
++        0.19 * a
+-        0.01 * about
+-        0.25 * all
+-        0    * america
++        0.04 * amp
+-        0.02 * and
++        0    * anthem
+-        0    * antifa
++        0.11 * are
+-        0    * bbsp
++        0.06 * be
+-        0.05 * beeth
++        0.01 * black
++        0.01 * blacklivesmatter
++        0.01 * breaking
+-        0.03 * bris
++        0.03 * but
+-        0.06 * by
+-        0    * ccot
++        0    * claims
++        0    * clinton
+-        0    * conservative
+-        0.13 * dallas
+-        0    * dems
+-        0    * der
+-        0.05 * die
++        0.08 * dont
+-        0    * feelthebern
++        0.18 * for
+-        0    * fort
++        0    * ft
++        0.14 * get
++        0    * gt
+-        0    * harvey
+-        0    * has
++        0.05 * have
++        0    * he
++        0    * here
+-        0.02 * hillary
+-        0    * hillarys
++        0    * hiphop
++        0.04 * his
++        0.01 * how
+-        0    * httpstcoatnbcoipt
++        0    * httpstcoemxjgtvv
++        0.04 * i
+-        0    * ich
++        0    * if
+-        0.01 * im
+-        0    * instotus
+-        0    * iran
++        0.22 * is
+-        0    * isis
+-        0    * islamkills
+-        0.02 * ist
++        0.04 * it
+-        0.08 * just
+-        0.01 * korea
+-        0    * liberal
++        0    * liberals
++        0.01 * like
+-        0.01 * listen
+-        0.02 * look
+-        0.07 * maga
++        0.03 * me
+-        0.06 * media
+-        0.04 * merkel
+-        0    * mt
+-        0.02 * music
++        0.09 * my
+-        0.02 * news
+-        0    * nfl
++        0.05 * not
++        0    * now
++        0.04 * nowplaying
+-        0    * obama
++        0    * obamas
+-        0.25 * of
+-        0    * on
++        0.04 * or
++        0.06 * our
++        0.09 * out
+-        0    * patriot
+-        0    * patriots
++        0.08 * people
+-        0    * pjnet
++        0    * playing
++        0.13 * police
+-        0.03 * politics
+-        0.07 * retweet
+-        0    * richmond
+-        0.06 * rt
+-        0.07 * rtamerica
+-        0.08 * so
+-        0.07 * sports
++        0    * talibkweli
++        0.01 * tcot
++        0.09 * that
++        0.1  * the
++        0.03 * they
++        0.07 * this
+-        0.03 * to
++        0.05 * trump
+-        0    * und
++        0.05 * us
++        0.03 * video
+-        0.04 * we
++        0.04 * when
++        0.01 * white
+-        0.75 * 1.0
+
+
+
+Time taken to build model: 67.16 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.49 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       29778               52.9914 %
+Incorrectly Classified Instances     26416               47.0086 %
+Kappa statistic                          0.2895
+Mean absolute error                      0.3134
+Root mean squared error                  0.5598
+Relative absolute error                 70.8021 %
+Root relative squared error            118.6526 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.255    0.195    0.369      0.255    0.301      0.067    0.530     0.324     LeftTroll
+                 0.548    0.275    0.498      0.548    0.522      0.267    0.636     0.423     RightTroll
+                 0.751    0.236    0.639      0.751    0.691      0.500    0.757     0.569     Other
+Weighted Avg.    0.530    0.237    0.509      0.530    0.514      0.288    0.647     0.445     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  4424  9126  3829 |     a = LeftTroll
+  3755 10250  4701 |     b = RightTroll
+  3807  1198 15104 |     c = Other
+

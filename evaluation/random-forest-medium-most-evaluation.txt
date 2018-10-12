@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     twitter-troll-most50
+Instances:    122637
+Attributes:   53
+              tweet-id
+              user-id
+              a
+              about
+              after
+              all
+              and
+              are
+              as
+              at
+              be
+              but
+              by
+              for
+              from
+              have
+              he
+              his
+              i
+              in
+              is
+              it
+              its
+              just
+              man
+              me
+              my
+              new
+              news
+              not
+              of
+              on
+              out
+              people
+              police
+              rt
+              that
+              the
+              they
+              this
+              to
+              trump
+              up
+              us
+              was
+              we
+              what
+              who
+              will
+              with
+              you
+              your
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 225.35 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 12.09 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       20534               36.5413 %
+Incorrectly Classified Instances     35660               63.4587 %
+Kappa statistic                          0.0477
+Mean absolute error                      0.4101
+Root mean squared error                  0.5401
+Relative absolute error                 92.6443 %
+Root relative squared error            114.4766 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.475    0.237    0.473      0.475    0.474      0.237    0.676     0.410     LeftTroll
+                 0.278    0.411    0.253      0.278    0.265      -0.129   0.535     0.375     RightTroll
+                 0.352    0.306    0.390      0.352    0.370      0.046    0.545     0.494     Other
+Weighted Avg.    0.365    0.320    0.370      0.365    0.367      0.047    0.582     0.429     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  8256  3689  5434 |     a = LeftTroll
+  7879  5209  5618 |     b = RightTroll
+  1330 11710  7069 |     c = Other
+

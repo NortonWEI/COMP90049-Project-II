@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     twitter-troll-best10
+Instances:    122637
+Attributes:   28
+              tweet-id
+              user-id
+              a
+              amp
+              and
+              bbsp
+              beeth
+              black
+              blacklivesmatter
+              breaking
+              dallas
+              hillary
+              i
+              is
+              maga
+              news
+              obama
+              of
+              on
+              pjnet
+              retweet
+              rt
+              rtamerica
+              tcot
+              the
+              this
+              to
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 357.57 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       19550               34.7902 %
+Incorrectly Classified Instances     36644               65.2098 %
+Kappa statistic                          0.0247
+Mean absolute error                      0.4347
+Root mean squared error                  0.6593
+Relative absolute error                 98.216  %
+Root relative squared error            139.7461 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.400    0.481    0.271      0.400    0.323      -0.075   0.459     0.294     LeftTroll
+                 0.345    0.086    0.667      0.345    0.455      0.323    0.629     0.448     RightTroll
+                 0.305    0.408    0.294      0.305    0.300      -0.102   0.449     0.338     Other
+Weighted Avg.    0.348    0.324    0.411      0.348    0.359      0.048    0.512     0.361     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  6959  3099  7321 |     a = LeftTroll
+  4841  6450  7415 |     b = RightTroll
+ 13848   120  6141 |     c = Other
+

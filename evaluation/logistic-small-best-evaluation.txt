@@ -1,0 +1,138 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     twitter-troll-best10
+Instances:    122637
+Attributes:   28
+              tweet-id
+              user-id
+              a
+              amp
+              and
+              bbsp
+              beeth
+              black
+              blacklivesmatter
+              breaking
+              dallas
+              hillary
+              i
+              is
+              maga
+              news
+              obama
+              of
+              on
+              pjnet
+              retweet
+              rt
+              rtamerica
+              tcot
+              the
+              this
+              to
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                    Class
+Variable                        LeftTroll             RightTroll
+================================================================
+tweet-id                                0                      0
+user-id                            0.0065                -0.0173
+a                                  0.7056                 0.4973
+amp                                 2.448                 1.6449
+and                                0.9602                 0.6003
+bbsp                              55.5597                59.8724
+beeth                            -46.2534                125.284
+black                              1.9121                 0.8415
+blacklivesmatter                   4.8701                 2.6719
+breaking                           1.4192                 3.4316
+dallas                            -3.4711                -2.7761
+hillary                            0.7037                 2.5881
+i                                  0.3266                -0.4503
+is                                 1.0363                 0.9611
+maga                               2.3613                 4.6318
+news                              -1.2208                 0.5853
+obama                              0.7304                 1.9391
+of                                 0.5165                 0.5097
+on                                 0.8065                 0.6367
+pjnet                              2.1947                 5.2706
+retweet                            2.1752                  2.039
+rt                                 2.5801                 2.0582
+rtamerica                         -4.5876                 0.0151
+tcot                               3.0859                 5.3346
+the                                1.0048                 0.8228
+this                               1.4838                 1.2336
+to                                 0.7502                 0.7076
+Intercept                         -1.8264                -0.0198
+
+
+Odds Ratios...
+                                    Class
+Variable                        LeftTroll             RightTroll
+================================================================
+tweet-id                                1                      1
+user-id                            1.0066                 0.9828
+a                                   2.025                 1.6443
+amp                               11.5648                 5.1807
+and                                2.6123                 1.8226
+bbsp                1.3467212072830367E24   1.005186824275356E26
+beeth                                   0  2.5713760157135265E54
+black                              6.7672                 2.3199
+blacklivesmatter                 130.3377                14.4667
+breaking                           4.1338                30.9262
+dallas                             0.0311                 0.0623
+hillary                            2.0213                 13.304
+i                                  1.3863                 0.6374
+is                                 2.8186                 2.6147
+maga                              10.6046               102.6968
+news                                0.295                 1.7954
+obama                              2.0758                 6.9526
+of                                 1.6762                 1.6649
+on                                 2.2401                 1.8903
+pjnet                              8.9769               194.5247
+retweet                            8.8036                 7.6829
+rt                                13.1987                 7.8316
+rtamerica                          0.0102                 1.0152
+tcot                              21.8862               207.3919
+the                                2.7313                 2.2768
+this                               4.4095                 3.4337
+to                                 2.1175                 2.0291
+
+
+Time taken to build model: 16.86 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.22 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       32820               58.4048 %
+Incorrectly Classified Instances     23374               41.5952 %
+Kappa statistic                          0.3671
+Mean absolute error                      0.3529
+Root mean squared error                  0.4328
+Relative absolute error                 79.7183 %
+Root relative squared error             91.7306 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.386    0.135    0.561      0.386    0.457      0.283    0.690     0.548     LeftTroll
+                 0.335    0.119    0.585      0.335    0.426      0.260    0.593     0.531     RightTroll
+                 0.987    0.379    0.592      0.987    0.740      0.593    0.867     0.689     Other
+Weighted Avg.    0.584    0.217    0.580      0.584    0.548      0.387    0.721     0.593     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  6706  4386  6287 |     a = LeftTroll
+  5035  6275  7396 |     b = RightTroll
+   204    66 19839 |     c = Other
+

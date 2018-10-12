@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.DecisionStump 
+Relation:     twitter-troll-best50
+Instances:    122637
+Attributes:   112
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Decision Stump
+
+Classifications
+
+user-id <= 49.5 : RightTroll
+user-id > 49.5 : Other
+user-id is missing : Other
+
+Class distributions
+
+user-id <= 49.5
+LeftTroll	RightTroll	Other	
+0.14992203558012615	0.5891275072648664	0.2609504571550074	
+user-id > 49.5
+LeftTroll	RightTroll	Other	
+0.40044712315523934	0.08685669400764338	0.5126961828371173	
+user-id is missing
+LeftTroll	RightTroll	Other	
+0.28515863890995374	0.31799538475337785	0.3968459763366684	
+
+
+Time taken to build model: 7.07 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.49 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       28272               50.3114 %
+Incorrectly Classified Instances     27922               49.6886 %
+Kappa statistic                          0.2362
+Mean absolute error                      0.4201
+Root mean squared error                  0.4807
+Relative absolute error                 94.9076 %
+Root relative squared error            101.8934 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.349     0.265     LeftTroll
+                 0.470    0.269    0.466      0.470    0.468      0.201    0.601     0.395     RightTroll
+                 0.969    0.494    0.522      0.969    0.678      0.481    0.737     0.517     Other
+Weighted Avg.    0.503    0.266    ?          0.503    ?          ?        0.572     0.399     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+     0  9453  7926 |     a = LeftTroll
+     0  8796  9910 |     b = RightTroll
+     0   633 19476 |     c = Other
+

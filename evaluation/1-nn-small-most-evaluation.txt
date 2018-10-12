@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     twitter-troll-most10
+Instances:    122637
+Attributes:   13
+              tweet-id
+              user-id
+              a
+              and
+              for
+              in
+              is
+              of
+              on
+              the
+              to
+              you
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 271.77 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       19937               35.4789 %
+Incorrectly Classified Instances     36257               64.5211 %
+Kappa statistic                          0.0352
+Mean absolute error                      0.4301
+Root mean squared error                  0.6558
+Relative absolute error                 97.1787 %
+Root relative squared error            139.0062 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.351    0.486    0.245      0.351    0.288      -0.125   0.433     0.287     LeftTroll
+                 0.414    0.097    0.679      0.414    0.514      0.371    0.658     0.476     RightTroll
+                 0.303    0.381    0.307      0.303    0.305      -0.078   0.461     0.342     Other
+Weighted Avg.    0.355    0.319    0.412      0.355    0.370      0.057    0.518     0.370     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  6102  3403  7874 |     a = LeftTroll
+  5081  7740  5885 |     b = RightTroll
+ 13764   250  6095 |     c = Other
+

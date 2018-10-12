@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     twitter-troll-best10
+Instances:    122637
+Attributes:   28
+              tweet-id
+              user-id
+              a
+              amp
+              and
+              bbsp
+              beeth
+              black
+              blacklivesmatter
+              breaking
+              dallas
+              hillary
+              i
+              is
+              maga
+              news
+              obama
+              of
+              on
+              pjnet
+              retweet
+              rt
+              rtamerica
+              tcot
+              the
+              this
+              to
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 110.84 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 6.08 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       20094               35.7583 %
+Incorrectly Classified Instances     36100               64.2417 %
+Kappa statistic                          0.0311
+Mean absolute error                      0.4111
+Root mean squared error                  0.5602
+Relative absolute error                 92.8776 %
+Root relative squared error            118.7388 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.322    0.145    0.498      0.322    0.391      0.204    0.658     0.420     LeftTroll
+                 0.458    0.441    0.342      0.458    0.391      0.016    0.602     0.405     RightTroll
+                 0.295    0.386    0.299      0.295    0.297      -0.091   0.494     0.441     Other
+Weighted Avg.    0.358    0.330    0.374      0.358    0.357      0.036    0.580     0.422     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  5592  3097  8690 |     a = LeftTroll
+  4894  8572  5240 |     b = RightTroll
+   749 13430  5930 |     c = Other
+

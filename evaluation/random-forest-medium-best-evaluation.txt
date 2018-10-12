@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     twitter-troll-best50
+Instances:    122637
+Attributes:   112
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 490.65 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 18.08 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       25106               44.6774 %
+Incorrectly Classified Instances     31088               55.3226 %
+Kappa statistic                          0.1713
+Mean absolute error                      0.3718
+Root mean squared error                  0.4961
+Relative absolute error                 84.0067 %
+Root relative squared error            105.1454 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.598    0.259    0.508      0.598    0.550      0.326    0.707     0.464     LeftTroll
+                 0.327    0.304    0.349      0.327    0.338      0.024    0.613     0.475     RightTroll
+                 0.427    0.267    0.471      0.427    0.448      0.164    0.664     0.546     Other
+Weighted Avg.    0.447    0.277    0.442      0.447    0.443      0.167    0.660     0.497     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+ 10397  2468  4514 |     a = LeftTroll
+  7468  6126  5112 |     b = RightTroll
+  2591  8935  8583 |     c = Other
+

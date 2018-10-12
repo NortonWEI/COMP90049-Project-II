@@ -1,0 +1,133 @@
+=== Model information ===
+
+Filename:     naive-bayes-small.model
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     twitter-troll-most10
+Attributes:   13
+              tweet-id
+              user-id
+              a
+              and
+              for
+              in
+              is
+              of
+              on
+              the
+              to
+              you
+              class
+
+=== Classifier model ===
+
+Naive Bayes Classifier
+
+                     Class
+Attribute        LeftTroll  RightTroll       Other
+                    (0.29)      (0.32)       (0.4)
+===================================================
+tweet-id
+  mean          320263.2708 320728.2882  319330.949
+  std. dev.     379378.8234 379736.0471 378346.9344
+  weight sum          34971       38998       48668
+  precision          9.1541      9.1541      9.1541
+
+user-id
+  mean              90.9108     46.4693     79.5926
+  std. dev.         41.7812      25.106     56.6811
+  weight sum          34971       38998       48668
+  precision          1.7475      1.7475      1.7475
+
+a
+  mean               0.2319      0.1686      0.0725
+  std. dev.          0.5157      0.4329      0.2962
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+and
+  mean                0.179      0.1077      0.0448
+  std. dev.          0.4303      0.3325      0.2207
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+for
+  mean               0.1845      0.1647      0.0828
+  std. dev.          0.4795      0.4454      0.3198
+  weight sum          34971       38998       48668
+  precision            1.25        1.25        1.25
+
+in
+  mean               0.1862      0.1723      0.1578
+  std. dev.           0.432      0.4074      0.3963
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+is
+  mean               0.1608      0.1236       0.031
+  std. dev.          0.4153      0.3546      0.1796
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+of
+  mean               0.1999      0.1666      0.0759
+  std. dev.          0.4593      0.4103      0.2821
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+on
+  mean               0.1309      0.0993      0.0481
+  std. dev.          0.3577      0.3118      0.2201
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+the
+  mean               0.4201      0.2954      0.0924
+  std. dev.          0.6939      0.5875      0.3345
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+to
+  mean               0.3243      0.3226      0.1229
+  std. dev.           0.594      0.5453      0.3605
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+you
+  mean               0.1453      0.0682      0.0396
+  std. dev.          0.4443      0.3042      0.2313
+  weight sum          34971       38998       48668
+  precision               1           1           1
+
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     twitter-troll-most10
+Instances:     unknown (yet). Reading incrementally
+Attributes:   13
+
+=== Summary ===
+
+Correctly Classified Instances       29989               53.3669 %
+Incorrectly Classified Instances     26205               46.6331 %
+Kappa statistic                          0.2884
+Mean absolute error                      0.3431
+Root mean squared error                  0.5001
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.255    0.123    0.482      0.255    0.334      0.166    0.607     0.441     LeftTroll
+                 0.310    0.159    0.493      0.310    0.381      0.175    0.548     0.401     RightTroll
+                 0.982    0.429    0.561      0.982    0.714      0.548    0.830     0.595     Other
+Weighted Avg.    0.534    0.244    0.514      0.534    0.485      0.306    0.668     0.483     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  4437  5775  7167 |     a = LeftTroll
+  4588  5796  8322 |     b = RightTroll
+   172   181 19756 |     c = Other
+

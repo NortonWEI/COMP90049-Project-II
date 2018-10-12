@@ -1,0 +1,279 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     twitter-troll-best50
+Instances:    122637
+Attributes:   112
+              [list of attributes omitted]
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                     Class
+Variable                         LeftTroll             RightTroll
+=================================================================
+tweet-id                                 0                      0
+user-id                             0.0081                -0.0169
+a                                    0.456                 0.2901
+about                               0.7129                 0.6085
+all                                 0.4278                 0.1931
+america                             0.7929                 1.1994
+amp                                 2.1602                 1.5028
+and                                 0.6798                 0.3757
+anthem                              1.6752                 3.3466
+antifa                              2.0864                 4.9396
+are                                 0.6423                 0.5113
+bbsp                               20.4844                24.5277
+be                                  0.3943                 0.1976
+beeth                              -4.5811                17.2093
+black                               1.7833                 0.7542
+blacklivesmatter                     4.913                 2.7164
+breaking                            1.5481                 3.3306
+bris                               -3.2077                16.6104
+but                                 0.5278                 0.3256
+by                                   1.057                 0.8134
+ccot                               25.2509                28.2796
+claims                               0.932                  2.051
+clinton                              0.602                 0.8405
+conservative                        1.8134                 3.1367
+dallas                             -3.2942                -2.7599
+dems                                1.0605                 2.5831
+der                                 -3.534                -6.5598
+die                                -1.1722                 -1.497
+dont                                0.4825                 0.3756
+feelthebern                         0.9085                 4.8785
+for                                 0.5949                  0.517
+fort                               -3.7909                -3.8928
+ft                                   2.333                 0.3048
+get                                 0.5456                -0.0366
+gt                                  2.6852                 0.5733
+harvey                              1.8468                 4.1481
+has                                 0.8591                 1.0162
+have                                0.3208                 0.2244
+he                                  0.5854                 0.5749
+here                                 1.476                 0.7973
+hillary                             0.3904                 2.1681
+hillarys                             0.456                 3.2963
+hiphop                              3.0313                 -0.448
+his                                 0.7565                 0.6706
+how                                 0.5777                  0.354
+httpstcoatnbcoipt                -113.3235               -74.1462
+httpstcoemxjgtvv                   35.9942               -16.9007
+i                                    -0.03                -0.5189
+ich                                -2.1103                -4.7105
+if                                  0.8054                 0.7548
+im                                  0.2357                 -0.626
+instotus                            9.2507                 26.881
+iran                                0.6652                 2.3253
+is                                  0.8293                 0.7835
+isis                               -0.8585                 0.4815
+islamkills                         -3.6357                22.6526
+ist                               -130.635                -4.6967
+it                                  0.2827                 0.1979
+just                                0.8368                 0.8926
+korea                               0.5718                 1.8387
+liberal                             1.3857                 3.1708
+liberals                            1.0822                 3.0888
+like                                0.4753                 0.1177
+listen                              2.0444                  0.789
+look                                0.1504                 0.6905
+maga                                2.3331                 4.5762
+me                                   0.227                -0.4361
+media                               1.0601                 1.4189
+merkel                              -2.977                -1.1577
+mt                                  0.5585                 2.6596
+music                                1.751                 0.4555
+my                                  0.1335                -0.5935
+news                               -0.9685                 0.8155
+nfl                                 0.9037                 2.5853
+not                                 0.4236                 0.4841
+now                                 1.2123                 0.8615
+nowplaying                         17.5235                13.8013
+obama                               0.6032                 1.6563
+obamas                              1.2384                  2.224
+of                                  0.4364                 0.4413
+on                                  0.6083                 0.5124
+or                                   0.894                 0.5231
+our                                 0.7197                 0.6555
+out                                 0.6718                 0.5455
+patriot                             0.2658                  1.692
+patriots                            1.3319                 2.7306
+people                               0.408                 0.3213
+pjnet                               2.2323                 4.5734
+playing                             0.5076                -0.2723
+police                             -0.6336                -0.5086
+politics                            1.3847                 2.9088
+retweet                             1.6123                 1.7177
+richmond                           -3.9381                -3.3915
+rt                                  2.2573                 1.7474
+rtamerica                          -4.2882                 0.2276
+so                                  0.6284                 0.3707
+sports                              1.3938                 3.2862
+talibkweli                         19.2822                 -2.721
+tcot                                3.0508                 4.9611
+that                                0.6309                  0.493
+the                                 0.7968                 0.6294
+they                                0.4342                  0.408
+this                                1.3164                  1.125
+to                                  0.5364                 0.5255
+trump                               0.8797                 1.0628
+und                                -3.1743                -4.8872
+us                                  0.8685                 1.0545
+video                                1.308                 1.7934
+we                                  0.9346                 0.8495
+when                                0.7702                 0.5993
+white                                 1.28                  0.672
+Intercept                          -2.2938                -0.3945
+
+
+Odds Ratios...
+                                     Class
+Variable                         LeftTroll             RightTroll
+=================================================================
+tweet-id                                 1                      1
+user-id                             1.0081                 0.9832
+a                                   1.5777                 1.3365
+about                               2.0399                 1.8376
+all                                 1.5338                  1.213
+america                             2.2099                 3.3182
+amp                                  8.673                 4.4944
+and                                 1.9735                 1.4561
+anthem                              5.3398                 28.406
+antifa                              8.0556                139.716
+are                                 1.9009                 1.6674
+bbsp                        787536623.9598  4.4901889633367905E10
+be                                  1.4834                 1.2185
+beeth                               0.0102          29780045.6616
+black                               5.9493                  2.126
+blacklivesmatter                  136.0527                15.1256
+breaking                            4.7027                27.9541
+bris                                0.0404          16361157.1837
+but                                 1.6952                 1.3848
+by                                  2.8778                 2.2555
+ccot                  9.253582208228159E10  1.9128972650529668E12
+claims                              2.5396                 7.7759
+clinton                             1.8258                 2.3175
+conservative                        6.1312                23.0284
+dallas                              0.0371                 0.0633
+dems                                2.8878                13.2387
+der                                 0.0292                 0.0014
+die                                 0.3097                 0.2238
+dont                                1.6201                 1.4559
+feelthebern                         2.4805               131.4337
+for                                 1.8129                  1.677
+fort                                0.0226                 0.0204
+ft                                 10.3086                 1.3563
+get                                 1.7257                  0.964
+gt                                 14.6606                 1.7741
+harvey                              6.3396                63.3131
+has                                  2.361                 2.7627
+have                                1.3782                 1.2515
+he                                  1.7957                  1.777
+here                                4.3756                 2.2196
+hillary                             1.4776                 8.7418
+hillarys                            1.5777                27.0118
+hiphop                             20.7232                 0.6389
+his                                 2.1308                 1.9553
+how                                  1.782                 1.4248
+httpstcoatnbcoipt                        0                      0
+httpstcoemxjgtvv      4.286198681440709E15                      0
+i                                   0.9705                 0.5952
+ich                                 0.1212                  0.009
+if                                  2.2376                 2.1272
+im                                  1.2657                 0.5347
+instotus                         10412.245   4.723457414233992E11
+iran                                1.9448                10.2297
+is                                  2.2917                 2.1891
+isis                                0.4238                 1.6184
+islamkills                          0.0264        6885259744.8087
+ist                                      0                 0.0091
+it                                  1.3267                 1.2188
+just                                 2.309                 2.4415
+korea                               1.7715                 6.2884
+liberal                             3.9974                23.8263
+liberals                            2.9511                21.9499
+like                                1.6086                 1.1249
+listen                              7.7246                 2.2013
+look                                1.1622                 1.9946
+maga                               10.3099                97.1472
+me                                  1.2548                 0.6465
+media                               2.8868                 4.1328
+merkel                              0.0509                 0.3142
+mt                                  1.7481                14.2905
+music                               5.7605                  1.577
+my                                  1.1429                 0.5524
+news                                0.3796                 2.2603
+nfl                                 2.4687                 13.267
+not                                 1.5274                 1.6227
+now                                 3.3611                 2.3667
+nowplaying                   40772410.8782             985893.669
+obama                               1.8279                 5.2399
+obamas                              3.4501                 9.2445
+of                                  1.5472                 1.5548
+on                                  1.8374                 1.6694
+or                                  2.4448                 1.6873
+our                                 2.0539                 1.9261
+out                                 1.9578                 1.7254
+patriot                             1.3044                 5.4303
+patriots                            3.7881                15.3426
+people                              1.5038                 1.3789
+pjnet                               9.3216                96.8745
+playing                             1.6613                 0.7616
+police                              0.5307                 0.6013
+politics                            3.9937                18.3354
+retweet                             5.0142                 5.5719
+richmond                            0.0195                 0.0337
+rt                                  9.5572                 5.7398
+rtamerica                           0.0137                 1.2556
+so                                  1.8746                 1.4488
+sports                              4.0302                26.7412
+talibkweli                  236671359.5111                 0.0658
+tcot                               21.1322               142.7561
+that                                1.8794                 1.6372
+the                                 2.2185                 1.8766
+they                                1.5437                 1.5038
+this                                3.7301                 3.0801
+to                                  1.7098                 1.6912
+trump                               2.4103                 2.8944
+und                                 0.0418                 0.0075
+us                                  2.3832                 2.8706
+video                               3.6988                 6.0097
+we                                  2.5463                 2.3384
+when                                2.1602                 1.8209
+white                               3.5965                 1.9581
+
+
+Time taken to build model: 403.2 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.52 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       35107               62.4746 %
+Incorrectly Classified Instances     21087               37.5254 %
+Kappa statistic                          0.4308
+Mean absolute error                      0.3052
+Root mean squared error                  0.4099
+Relative absolute error                 68.953  %
+Root relative squared error             86.8812 %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.465    0.153    0.576      0.465    0.514      0.332    0.744     0.602     LeftTroll
+                 0.384    0.108    0.639      0.384    0.480      0.325    0.680     0.605     RightTroll
+                 0.987    0.307    0.642      0.987    0.778      0.655    0.957     0.912     Other
+Weighted Avg.    0.625    0.193    0.620      0.625    0.597      0.445    0.799     0.714     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  8076  3984  5319 |     a = LeftTroll
+  5772  7189  5745 |     b = RightTroll
+   185    82 19842 |     c = Other
+

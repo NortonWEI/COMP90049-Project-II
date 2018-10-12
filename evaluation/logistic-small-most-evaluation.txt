@@ -1,0 +1,93 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     twitter-troll-most10
+Instances:    122637
+Attributes:   13
+              tweet-id
+              user-id
+              a
+              and
+              for
+              in
+              is
+              of
+              on
+              the
+              to
+              you
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable      LeftTroll  RightTroll
+===================================
+tweet-id              0           0
+user-id          0.0069     -0.0185
+a                0.7094      0.4332
+and               0.956      0.5448
+for              0.6327      0.5865
+in               -0.005      0.0254
+is               1.1902      1.0612
+of               0.5268       0.504
+on               0.8423      0.6483
+the              1.0057      0.7563
+to               0.7888      0.8146
+you              0.7018      0.1114
+Intercept       -1.8255      0.2548
+
+
+Odds Ratios...
+                  Class
+Variable      LeftTroll  RightTroll
+===================================
+tweet-id              1           1
+user-id          1.0069      0.9817
+a                2.0328      1.5423
+and              2.6012      1.7243
+for              1.8827      1.7977
+in               0.9951      1.0258
+is               3.2877      2.8899
+of               1.6935      1.6554
+on               2.3217      1.9122
+the              2.7337      2.1304
+to               2.2009      2.2583
+you              2.0174      1.1179
+
+
+Time taken to build model: 6.68 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.16 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       31438               55.9455 %
+Incorrectly Classified Instances     24756               44.0545 %
+Kappa statistic                          0.3291
+Mean absolute error                      0.3799
+Root mean squared error                  0.4519
+Relative absolute error                 85.8338 %
+Root relative squared error             95.784  %
+Total Number of Instances            56194     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.300    0.131    0.506      0.300    0.376      0.202    0.606     0.450     LeftTroll
+                 0.337    0.166    0.503      0.337    0.403      0.193    0.542     0.417     RightTroll
+                 0.991    0.373    0.597      0.991    0.745      0.604    0.861     0.675     Other
+Weighted Avg.    0.559    0.229    0.538      0.559    0.517      0.343    0.676     0.519     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  5208  6182  5989 |     a = LeftTroll
+  4953  6299  7454 |     b = RightTroll
+   126    52 19931 |     c = Other
+
